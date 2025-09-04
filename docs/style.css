@@ -1,0 +1,291 @@
+@font-face {
+    font-family: hello;
+    src: url(./GeneralSans-Regular.otf);
+    
+}
+
+
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: hello;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+.bounding{
+    width: fit-content;
+    /* background-color: red; */
+    overflow: hidden;
+}
+
+.bounding .boundingelem{
+    transform: translateY(100%);
+}
+
+#ring{
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.8s;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: white;
+    z-index: 99999;
+}
+   
+
+
+#main{
+    width: 100%;
+    background-color: black;
+}
+
+#hero{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    color: white;
+    position: relative;
+}
+
+#navbar a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px 40px;
+    color: white;
+}
+
+#heading{
+    margin-top: 90px;
+}
+
+#heading h1{
+    margin-left: 30px;
+    font-size: 10vw;
+    font-weight: 900;
+    line-height: 1;
+    text-transform: uppercase;
+    opacity: .6;
+}
+
+
+#heading #secondh1{
+    margin-left: 167px;
+}
+
+.blocktext{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    /* background-color: brown; */
+    width: fit-content;
+   
+    
+}
+
+.blocktext h5{
+    text-align: right;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+
+#chotiheading{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin-top: 50px;
+    padding-right: 50px;
+   
+}
+
+#chotiheading h5{
+    text-transform: uppercase;
+    margin-top: .5vw;
+    text-align: right;
+    font-size: 15px;
+}
+
+
+
+#herofooter{
+    padding: 0 2vw;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#herofooter a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#herofooter #iconset{
+    display: flex;
+    gap: 5px;
+}
+
+#herofooter .circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color:#888;
+
+}
+
+#second{
+    padding-right: 10vw;
+    padding-top: 200px;
+    width: 100%;
+    height: 200vh;  
+    background-color: black;
+    color: white;
+    
+    
+}
+
+.elem{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    border-top: 1px solid #888;
+    padding: 3.5vw 3vw;
+    padding-right: 0;
+}
+
+.elem h1{
+    font-size: 7.6vw;
+    opacity: .7;
+     cursor: default; /*  isse text select wali I-line hide ho jayegi */
+    user-select: none; /* text select bhi nahi hoga */
+}
+
+*{
+     cursor: default; /*  isse text select wali I-line hide ho jayegi */
+    user-select: none; /* text select bhi nahi hoga */
+}
+
+.elemlast{
+    border-bottom: 1px solid #888;
+}
+
+.elem img{
+    /* display: none; */
+    opacity: 0;
+    height: 140%;
+    position: absolute;
+    z-index: 999;
+    transform: translate(-50%, -50%); /* mouse point ko center banao */
+    pointer-events: none;
+}
+
+
+#about{
+    /* padding: 10vw 10vw; */
+    padding-left: 40vw;
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    
+      
+}
+
+#about img{
+   width: 200px;
+}
+
+#textabout{
+    width: 25rem;
+    
+}
+
+#textabout h5{
+    text-transform: uppercase;
+    opacity: .6;
+    margin-bottom: 10px;
+}
+
+#textabout p{
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+#textabout a{
+    padding: 12px 22px;
+    border: 1px solid white;
+    text-decoration: none;
+    border-radius: 100px;
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+
+#subscribe{
+    color: white;
+    background-color: black;
+    padding: 20px 30px;
+    padding-bottom: 7vw;
+}
+
+#subscribe h5{
+    text-transform: uppercase;
+    opacity: .6;
+    
+}
+
+#subscribe h3{
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+#footer{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 30px;
+}
+
+#footerleft{
+    display: flex;
+    gap: 20px;
+}
+
+#footerright{
+    display: flex;
+    gap: 30px;
+}
+
+#footer a{
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+}
